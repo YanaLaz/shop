@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Каталог</h1>
+    <div class="tovar tovar_1">
+        <img src="{{url_for('static', filename = 'bed2.jpg')}}" width="200" height="150" alt="bed"><br>
+        <a href="{{ url_for('bed2')}}">Посмотреть подробное описание</a><br>
+    </div>
+    <div class="tovar tovar_2">
+        <img src="{{url_for('static', filename = 'bed3.jpg')}}" width="200" height="150" alt="bed"><br>
+        <a href="{{ url_for('bed3')}}">Посмотреть подробное описание</a>
+    </div>
+    <hr>
+    <div class="footer">
+        <h5>Все права защищены &copy;&nbsp;2020</h5>
+        <a href="https://www.google.ru/maps/place/Мебель+России+на+Ярославском+шс.19а/@55.8584082,37.677031,15z/data=!4m5!3m4!1s0x46b53768ff39b323:0x7a409e32fd48f2f9!8m2!3d55.8584082!4d37.685791" target = _blank>Наш адрес</a>
+    </div>
+{% endblock %}
+

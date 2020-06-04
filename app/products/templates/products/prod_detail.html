@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content_title %}
+
+{% endblock %}
+
+{% block content %}
+            <div class="col-md-4">
+                <img src="{{product.picture}}" width="450" height="330" class="card-img" alt="...">
+            </div>
+
+     <div class="film clear" itemscope="" itemtype="http://schema.org/Movie">
+            <div class="information">
+                <div class="cover">
+                    <div class="media"></div>
+                </div>
+
+                <div class="title", class="center"><h1 itemprop="name">{{product.title}}</h1></div></div>
+                <div class="meta">
+                    <div class="leftstr">
+                        <div class="content-list">
+                            <div class="item">
+
+                                <div class="title"><span><h4>Краткое описание товара</h4></span></div>
+                                <div class="value"><span>{{product.description}}</span></div>
+                            </div>
+
+
+                            <div class="item" itemprop="director" itemscope="" itemtype="http://schema.org/Person">
+
+                                <div class="title"><span><h4>Цвет</h4></span></div>
+                                <div class="value" itemprop="name"><span>{{product.color}}</span></div>
+                            </div>
+
+
+                            <div class="item" itemprop="actor" itemscope="" itemtype="http://schema.org/Person">
+
+                                <div class="title"><span><h4>Материал</h4></span></div>
+                                <div class="value" itemprop="name"><span>{{product.material}}</span></div>
+                            </div>
+
+
+                            <div class="item">
+
+                                <div class="title"><span><h4>Бренд</h4></span></div>
+                                <div class="value"><span>{{product.brend}}</span></div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title"><span><h4>Страна</h4></span></div>
+                                <div class="value"><span>{{product.country}}</span></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+{% endblock %}
